@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import SignOut from "./SignOut";
+
 
 export default function User(){
 
@@ -11,8 +12,8 @@ export default function User(){
     }
 
     function handleSignOut(){
-        setIsSignOutVisible(false);
-        window.location.href = "/";
+            setIsSignOutVisible(false);
+            window.location.href = "/";
     }
 
     function handleClose(){

@@ -4,6 +4,8 @@ import NavbarDashboard from "@/app/component/NavbarDashboard";
 import Sidebar from "@/app/component/Sidebar";
 import RootLayout from "@/app/layout";
 import React, { useState } from "react";
+import { useEffect } from "react";
+
 import TugasPraktikumQiroahDetail from "@/app/component/TugasPraktikumQiroahDetail";
 import HafalanPraktikumQiroahDetail from "@/app/component/HafalanPraktikumQiroahDetail";
 
@@ -35,22 +37,26 @@ const PraktikumQiroahHafalan = ({ params }) => {
         setIsNotificationVisible(false);
     }
 
-    window.onclick = function(event) {
-        var hamMenu = document.getElementById("hamMenu");
-        var HamMenu = document.getElementById("HamMenu");
-        var notification = document.getElementById("notification");
-        var Notification = document.getElementById("Notification");
-        var profile = document.getElementById("profile");
-        var Profile = document.getElementById("Profile");
-        var PROFILE = document.getElementById("PROFILE");
-        var Navbar = document.getElementsByTagName("aside");
-        var target = event.target;
-        
-        if (target !== notification && target !== Notification && target !== profile && target !== Profile && target !== PROFILE) {
-            setIsProfileVisible(false);
-            setIsNotificationVisible(false);
-        }
-      };
+    useEffect(() => {
+        window.onclick = function(event) {
+            var hamMenu = document.getElementById("hamMenu");
+            var HamMenu = document.getElementById("HamMenu");
+            var notification = document.getElementById("notification");
+            var Notification = document.getElementById("Notification");
+            var profile = document.getElementById("profile");
+            var Profile = document.getElementById("Profile");
+            var PROFILE = document.getElementById("PROFILE");
+            var Navbar = document.getElementsByTagName("aside");
+            var target = event.target;
+            
+            if (target !== notification && target !== Notification && target !== profile && target !== Profile && target !== PROFILE) {
+                setIsProfileVisible(false);
+                setIsNotificationVisible(false);
+            }
+          };
+      }, []);
+
+    
 
   const pageTitle = "LearnPQI - Hafalan Praktikum Qiroah";
   return (

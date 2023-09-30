@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function PraktikumIbadahCard(){
     const PraktikumIbadah = () => {
-        window.location.href = "/Dashboard/PraktikumIbadah/MateriSection";
+        useEffect(() => {
+            window.location.href = "/Dashboard/PraktikumIbadah/MateriSection";
+          }, []);
     }
     return(
         <div className="w-fit h-fit cursor-pointer">

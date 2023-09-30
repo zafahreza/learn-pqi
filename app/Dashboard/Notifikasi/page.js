@@ -7,6 +7,8 @@ import React, { useState } from "react";
 import MainProfile from "@/app/component/MainProfile";
 import Link from "next/link";
 import MainNotification from "@/app/component/MainNotification";
+import { useEffect } from "react";
+
 
 const AllNotification = ({ params }) => {
 
@@ -36,22 +38,26 @@ const AllNotification = ({ params }) => {
         setIsNotificationVisible(false);
     }
 
-    window.onclick = function(event) {
-        var hamMenu = document.getElementById("hamMenu");
-        var HamMenu = document.getElementById("HamMenu");
-        var notification = document.getElementById("notification");
-        var Notification = document.getElementById("Notification");
-        var profile = document.getElementById("profile");
-        var Profile = document.getElementById("Profile");
-        var PROFILE = document.getElementById("PROFILE");
-        var Navbar = document.getElementsByTagName("aside");
-        var target = event.target;
-        
-        if (target !== notification && target !== Notification && target !== profile && target !== Profile && target !== PROFILE) {
-            setIsProfileVisible(false);
-            setIsNotificationVisible(false);
-        }
-      };
+    useEffect(() => {
+        window.onclick = function(event) {
+            var hamMenu = document.getElementById("hamMenu");
+            var HamMenu = document.getElementById("HamMenu");
+            var notification = document.getElementById("notification");
+            var Notification = document.getElementById("Notification");
+            var profile = document.getElementById("profile");
+            var Profile = document.getElementById("Profile");
+            var PROFILE = document.getElementById("PROFILE");
+            var Navbar = document.getElementsByTagName("aside");
+            var target = event.target;
+            
+            if (target !== notification && target !== Notification && target !== profile && target !== Profile && target !== PROFILE) {
+                setIsProfileVisible(false);
+                setIsNotificationVisible(false);
+            }
+          };
+      }, []);
+
+    
 
   const pageTitle = "LearnPQI - Notifikasi";
   return (

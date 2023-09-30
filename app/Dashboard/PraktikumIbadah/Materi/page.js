@@ -5,6 +5,8 @@ import Sidebar from "@/app/component/Sidebar";
 import RootLayout from "@/app/layout";
 import React, { useState } from "react";
 import MateriPraktikumIbadahDetail from "@/app/component/MateriPraktikumIbadahDetail";
+import { useEffect } from "react";
+
 
 const PageMateriPraktikumIbadah = ({ params }) => {
 
@@ -34,22 +36,26 @@ const PageMateriPraktikumIbadah = ({ params }) => {
         setIsNotificationVisible(false);
     }
 
-    window.onclick = function(event) {
-        var hamMenu = document.getElementById("hamMenu");
-        var HamMenu = document.getElementById("HamMenu");
-        var notification = document.getElementById("notification");
-        var Notification = document.getElementById("Notification");
-        var profile = document.getElementById("profile");
-        var Profile = document.getElementById("Profile");
-        var PROFILE = document.getElementById("PROFILE");
-        var Navbar = document.getElementsByTagName("aside");
-        var target = event.target;
-        
-        if (target !== notification && target !== Notification && target !== profile && target !== Profile && target !== PROFILE) {
-            setIsProfileVisible(false);
-            setIsNotificationVisible(false);
-        }
-      };
+    useEffect(() => {
+        window.onclick = function(event) {
+            var hamMenu = document.getElementById("hamMenu");
+            var HamMenu = document.getElementById("HamMenu");
+            var notification = document.getElementById("notification");
+            var Notification = document.getElementById("Notification");
+            var profile = document.getElementById("profile");
+            var Profile = document.getElementById("Profile");
+            var PROFILE = document.getElementById("PROFILE");
+            var Navbar = document.getElementsByTagName("aside");
+            var target = event.target;
+            
+            if (target !== notification && target !== Notification && target !== profile && target !== Profile && target !== PROFILE) {
+                setIsProfileVisible(false);
+                setIsNotificationVisible(false);
+            }
+          };
+      }, []);
+
+    
 
   const pageTitle = "LearnPQI - Materi Praktikum Ibadah";
   return (
