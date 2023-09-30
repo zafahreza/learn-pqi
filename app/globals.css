@@ -1,27 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+}
+
+#MulaiButton:hover {
+  transition: .2s ease-in-out;
+  background-color: white;
+  color: #00438f;
+}
+
+.Sidebar {
+  left: 0 !important;
+}
+
+p {
+  cursor: default;
+}
+
+#PdfViewer {
+  width: 100vw !important;
+  height: calc(100vh - 106px) !important;
+}
+
+#Notifikasi {
+  position: relative;
+}
+
+#Notifikasi > svg {
+  position: absolute;
+  left: -476px;
+  top: 20px;
+}
+
+#notification-text {
+  position: absolute;
+  top: 38px;
+  width: 474px;
+  height: 440px;
+  border-radius: 13px;
+  z-index: 9999 !important;
+  left: -474px;
+  flex-direction: column;
+  background-color: transparent;
+  padding: 12px 24px 12px 24px;
+}
+
+#User{
+  position: relative;
+  z-index: 9999;
+}
+
+#User > svg {
+  position: absolute;
+  left: -187px;
+  top: 20px;
+  z-index: 9998;
+}
+
+#User-Text {
+  position: absolute;
+  width: 206px;
+  height: 127px;
+  border-radius: 13px;
+  z-index: 9999 !important;
+  top: 38px;
+  left: -185px;
+  flex-direction: column;
+  background-color: transparent;
+  padding: 12px 24px 12px 24px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#User-Text > div {
+  display: flex;
+  gap: 8px;
+}
+
+.hover-lightGrey {
+  cursor: pointer;
+}
+
+.hover-lightGrey:hover {
+  background-color: rgba(211, 211, 211, 0.75);
+}
+
+.DropDownSidebarShow {
+  display: flex !important;
+}
+
+#PraktikumIbadahDropDown {
+  display: none;
+}
+
+#PraktikumQiroahDropDown {
+  display: none;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: white;
+}
+
+#LabelPengumpulanTugas {
+  width: 100%;
+  height: 43px;
+  border: 2px solid #0078ce;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#NotificationCard{
+  transition: .2s ease;
+}
+
+#NotificationCard:hover {
+  background-color: lightgrey;
 }
