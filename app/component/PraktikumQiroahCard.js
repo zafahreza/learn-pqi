@@ -5,19 +5,12 @@ import { useEffect } from "react";
 
 export default function PraktikumQiroahCard(){
 
-
-    function PraktikumQiroah(){
-        useEffect(() => {
-            window.location.href = "/Dashboard/PraktikumQiroah/MateriSection"
-          }, []);
-    }
-
     return(
         <div className="w-fit h-fit cursor-pointer">
-            <div className="w-[451px] h-[119.37px] rounded-t-[20px] bg-[#0078CE] px-[38px] flex justify-between items-center" onClick={PraktikumQiroah}>
+            <Link href="/Dashboard/PraktikumQiroah/MateriSection" className="w-[451px] h-[119.37px] rounded-t-[20px] bg-[#0078CE] px-[38px] flex justify-between items-center">
                 <p className="cursor-default font-Poppins text-white text-[24px] leading-[36px] font-[600]">Praktikum Qiroah</p>
                 <img src="/assets/quranDashboard.png" alt="" width={74} height={89.37} loading="lazy"/>
-            </div>
+            </Link>
             <div className="w-[451px] h-[184px] rounded-b-[20px] bg-white py-4 px-[22px] flex flex-col justify-between">
                 <div className="flex flex-col gap-[5px]">
                     <div className="text-[14px] font-[500]">

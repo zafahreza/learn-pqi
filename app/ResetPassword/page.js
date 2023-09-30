@@ -6,7 +6,7 @@ const ResetPassword = () => {
   const pageTitle = "LearnPQI - Reset Password";
   return (
     <RootLayout title={pageTitle}>
-    <main className="w-screen h-screen flex justify-center items-center bg-[#C1E3FB]">
+    <main className="max-w-screen min-h-screen flex justify-center items-center bg-[#C1E3FB]">
       <div className="w-2/5 h-1/2 flex bg-white rounded-[30px]">
         <LoginBrand />
         <ResetPasswordForm />

@@ -61,7 +61,7 @@ const Silabus = ({ params }) => {
   const pageTitle = "LearnPQI - Silabus";
   return (
     <RootLayout title={pageTitle}>
-        <main className="w-screen h-screen bg-[#C1E3FB]">
+        <main className="max-w-screen min-h-screen bg-[#C1E3FB]">
             <NavbarDashboard shiftSidebar={shiftSidebar} notification={notification} profile={profile} isNotificationVisible={isNotificationVisible} setIsNotificationVisible={setIsNotificationVisible} isProfileVisible={isProfileVisible} setIsProfileVisible={setIsProfileVisible}/>
             <Sidebar position={sidebarPosition} closeSidebar={closeSidebar}/>
             <div className="w-screen h-[106px] bg-[#0078CE] flex justify-center items-center relative pt-[60px]">

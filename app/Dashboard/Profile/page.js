@@ -60,7 +60,7 @@ const Profile = ({ params }) => {
   const pageTitle = "LearnPQI - Profile";
   return (
     <RootLayout title={pageTitle}>
-        <main className="w-screen h-screen bg-[#C1E3FB]">
+        <main className="max-w-screen min-h-screen bg-[#C1E3FB]">
             <NavbarDashboard shiftSidebar={shiftSidebar} notification={notification} profile={profile} isNotificationVisible={isNotificationVisible} setIsNotificationVisible={setIsNotificationVisible} isProfileVisible={isProfileVisible} setIsProfileVisible={setIsProfileVisible}/>
             <Sidebar position={sidebarPosition} closeSidebar={closeSidebar}/>
             <MainProfile params={params}/>

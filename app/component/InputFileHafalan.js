@@ -54,13 +54,13 @@ export default function InputFileHafalan() {
     }
 
     return (
-        <div className='w-[395px] border-[1px] rounded-[15px] border-black border-opacity-50 p-6 flex flex-col gap-[25px]'>
+        <div className='min-w-[395px] border-[1px] rounded-[15px] border-black border-opacity-50 p-6 flex flex-col gap-[25px]'>
             <div className='flex justify-between'>
                 <p className='font-[400] text-xl'>Kumpulkan Tugas</p>
                 <p id='SelesaiText' className='font-[600] text-[20px] text-[#0078CE] hidden'>Selesai</p>
             </div>
                 {files.map((file, index) => (
-                <div key={index} className="flex items-center justify-between pt-5 pb-5 pl-5 pr-5 border-[1px] border-black border-opacity-40 rounded-[10px]">
+                <div key={index} className="flex items-center justify-between gap-2 pt-5 pb-5 pl-5 pr-5 border-[1px] border-black border-opacity-40 rounded-[10px]">
                     <div className='flex gap-5'>
                         <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_70_1129)">

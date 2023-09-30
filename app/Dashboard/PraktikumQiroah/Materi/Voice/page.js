@@ -60,7 +60,7 @@ const PageMateriPraktikumQiroahVoice = ({ params }) => {
   const pageTitle = "LearnPQI - Materi Praktikum Qiroah";
   return (
     <RootLayout title={pageTitle}>
-        <main className="w-screen h-screen bg-[#FFF]">
+        <main className="max-w-screen min-h-screen bg-[#FFF]">
             <NavbarDashboard shiftSidebar={shiftSidebar} notification={notification} profile={profile} isNotificationVisible={isNotificationVisible} setIsNotificationVisible={setIsNotificationVisible} isProfileVisible={isProfileVisible} setIsProfileVisible={setIsProfileVisible}/>
             <Sidebar position={sidebarPosition} closeSidebar={closeSidebar}/>
             <MateriPraktikumQiroahDetailVoice params={params}/>
