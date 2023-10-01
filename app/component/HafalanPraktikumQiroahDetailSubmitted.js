@@ -5,7 +5,7 @@ import InputFileHafalanSubmitted from "./InputFileHafalanSubmitted";
 
 export default function HafalanPraktikumQiroahDetail(){
     return(
-        <div className="flex flex-col items-center pt-[60px]">
+        <div className="flex flex-col items-center pt-[60px] mb-20">
             <div className="w-[850px] h-[140px] flex flex-col justify-center pl-[58px] bg-[#0078CE] rounded-[20px] mt-[40px] mb-[28px]">
                 <Link href="/Dashboard/PraktikumQiroah/HafalanSection" className="font-Poppins font-[600] text-[20px] text-white">Praktikum Qiroah</Link>
                 <p className="font-[600] text-[32px] text-white">Surah An- Naba</p>
