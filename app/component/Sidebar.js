@@ -59,18 +59,18 @@ export default function Sidebar({ position, closeSidebar }){
                     <li>Hafalan Doa</li>
                 </Link>
             </div>
-            <div className="flex w-full h-[31px] items-center pl-[35px] gap-[18px] hover-lightGrey">
+            <Link href="/Dashboard/DetailKelas" className="flex w-full h-[31px] items-center pl-[37px] gap-[18px] hover-lightGrey">
                 <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M13.625 6.45831H20.9166V8.54165H13.625V6.45831ZM14.6666 10.625H20.9166V12.7083H14.6666V10.625ZM12.5833 2.29165H20.9166V4.37498H12.5833V2.29165ZM2.16665 14.7916H12.5833V13.75C12.5833 10.8781 10.2469 8.54165 7.37498 8.54165H5.29165C2.41977 8.54165 0.083313 10.8781 0.083313 13.75V14.7916H2.16665ZM6.33331 7.49998C8.41144 7.49998 9.97915 5.93227 9.97915 3.85415C9.97915 1.77602 8.41144 0.208313 6.33331 0.208313C4.25519 0.208313 2.68748 1.77602 2.68748 3.85415C2.68748 5.93227 4.25519 7.49998 6.33331 7.49998Z" fill="black"/>
                 </svg>
-                <Link href="/Dashboard/DetailKelas" className="text-[#06283D] font-[500] text-base">Detail Kelas</Link>
-            </div>
-            <div className="flex w-full h-[31px] items-center pl-[35px] gap-[18px] hover-lightGrey">
+                <p className="text-[#06283D] font-[500] text-base">Detail Kelas</p>
+            </Link>
+            <Link href="/Dashboard/RuangDiskusi" className="flex w-full h-[31px] items-center pl-[37px] gap-[18px] hover-lightGrey">
                 <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5.8 11.64V5.44H2C0.9 5.44 0 6.34 0 7.44V13.44C0 14.54 0.9 15.44 2 15.44H3V18.44L6 15.44H11C12.1 15.44 13 14.54 13 13.44V11.62C12.9343 11.6341 12.8672 11.6412 12.8 11.641H5.8V11.64ZM18 0.440002H9C7.9 0.440002 7 1.34 7 2.44V10.44H14L17 13.44V10.44H18C19.1 10.44 20 9.541 20 8.44V2.44C20 1.34 19.1 0.440002 18 0.440002Z" fill="black"/>
                 </svg>
-                <Link href="/Dashboard/RuangDiskusi" className="text-[#06283D] font-[500] text-base">Ruang Diskusi</Link>
-            </div>
+                <p className="text-[#06283D] font-[500] text-base">Ruang Diskusi</p>
+            </Link>
         </aside>
     )
 }

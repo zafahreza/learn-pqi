@@ -4,7 +4,7 @@ import InputFileIbadah from "./InputFileIbadah";
 
 export default function TugasPraktikumIbadahDetail(){
     return(
-        <div className="flex flex-col items-center pt-[60px]">
+        <div className="flex flex-col items-center pt-[60px] mb-20">
             <div className="w-[850px] h-[140px] flex flex-col justify-center pl-[58px] bg-[#0078CE] rounded-[20px] mt-[40px] mb-[28px]">
                 <Link href="/Dashboard/PraktikumIbadah/TugasSection" className="font-Poppins font-[600] text-[20px] text-white">Praktikum Ibadah</Link>
                 <p className="font-[600] text-[32px] text-white">Tugas 3 - Presentasi</p>
