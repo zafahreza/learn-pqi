@@ -1,14 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function InputFileSubmitted() {
 
     const [files, setFiles] = useState([]);
+    const [teks, setTeks] = useState("Anda tidak mengunggah tugas");
+    const [isSubmited, setIsSubmited] = useState(true);
+    const [sent, setSent] = useState("");
+
+    const handleSent = (x) => {
+        if (x === "hidden"){
+            const newSent = x;
+            setSent(newSent);
+        }else{
+            const newSent  = "";
+            setSent(newSent);
+        }
+    }
 
     const handleFileChange = (e) => {
       const newFiles = [...files, ...e.target.files];
       setFiles(newFiles);
     };
   
+    useEffect(() => {
+        if (isSubmited) {
+            if (files.length === 0){
+                const newTeks = "Anda tidak mengunggah tugas"
+                setTeks(newTeks);
+            } else{
+                const newTeks = ""
+                setTeks(newTeks);
+            }
+        }else{
+            const newTeks = ""
+            setTeks(newTeks);
+        }
+        
+      });
+
     const handleRemoveFile = (index) => {
       const newFiles = [...files];
       newFiles.splice(index, 1);
@@ -32,6 +61,7 @@ export default function InputFileSubmitted() {
     }
 
     const HandleSubmitted = () => {
+        setIsSubmited(false);
         document.getElementById("sendTaskPopup").classList.add("hidden");
         document.getElementById("SendButton").innerHTML = "Kirim";
         document.getElementById("LabelPengumpulanTugas").classList.remove("hidden");
@@ -40,9 +70,11 @@ export default function InputFileSubmitted() {
         document.getElementById("sendButton").innerHTML = "Kirim";
         document.getElementById("SelesaiText").classList.add("hidden");
         document.getElementById("removeFileButton").classList.remove("hidden");
+        handleSent("");
     }
 
     const handleSubmitted = () => {
+        setIsSubmited(true);
         document.getElementById("sendTaskPopup").classList.add("hidden");
         document.getElementById("SendButton").innerHTML = "Batal Kirim";
         document.getElementById("LabelPengumpulanTugas").classList.add("hidden");
@@ -51,6 +83,7 @@ export default function InputFileSubmitted() {
         document.getElementById("sendButton").innerHTML = "Ya";
         document.getElementById("SelesaiText").classList.remove("hidden");
         document.getElementById("removeFileButton").classList.add("hidden");
+        handleSent("hidden");
     }
 
     return (
@@ -59,6 +92,7 @@ export default function InputFileSubmitted() {
                 <p className='font-[400] text-xl'>Kumpulkan Tugas</p>
                 <p id='SelesaiText' className='font-[600] text-[20px] text-[#0078CE]'>Selesai</p>
             </div>
+                <p className='text-center'>{teks}</p>
                 {files.map((file, index) => (
                 <div key={index} className="flex items-center gap-2 justify-between pt-5 pb-5 pl-5 pr-5 border-[1px] border-black border-opacity-40 rounded-[10px]">
                     <div className='flex gap-5'>
@@ -69,7 +103,7 @@ export default function InputFileSubmitted() {
                     </div>
                     <button
                         onClick={() => handleRemoveFile(index)}
-                        className="text-red-500"
+                        className={sent}
                         id='removeFileButton'
                         >
                         <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
