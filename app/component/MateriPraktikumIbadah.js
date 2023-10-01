@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import HafalanCardIbadah from "./HafalanCardIbadah";
 import HafalanCardIbadahSubmitted from "./HafalanCardIbadahSubmitted";
 import MateriIbadahCard from "./MateriIbadahCard";
+import MateriIbadahCardSecond from "./MateriIbadahCardSecond";
 import TaskCardIbadah from "./TaskCardIbadah";
 import TaskCardIbadahSubmitted from "./TaskCardIbadahSubmitted";
 
@@ -107,7 +108,7 @@ export default function MateriPraktikumQiroah({ params }){
             {isMateriVisible && 
             <div id="MateriSection" className=" flex flex-col items-center gap-[25px] pb-5">
                 <MateriIbadahCard />
-                <MateriIbadahCard />
+                <MateriIbadahCardSecond />
             </div>
             }
             {isTugasVisible &&
