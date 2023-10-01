@@ -6,7 +6,7 @@ export default function Dosen(){
             <div className="flex pl-5 gap-[30px]">
                 <img src="/assets/dosen1.png" alt="" width={50} height={50}/>
                 <div>
-                    <p className="font-[500] text-[16px]">Dosen 1</p>
+                    <p className="font-[500] text-[16px]">Drs. M. Tabah Rosyadi, M.A</p>
                     <p className="font-[500] text-[16px] text-black flex">NIP :<p className="opacity-70 font-[400] ml-1">196903161999000000</p></p>
                 </div>
             </div>

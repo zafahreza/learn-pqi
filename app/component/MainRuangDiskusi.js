@@ -45,21 +45,21 @@ export default function MainRuangDiskusi(){
                 </div>
                 <div className="flex flex-col gap-1 mb-[10px]">
                     <div className="flex gap-[10px] items-center">
-                        <p className="font-[900] text-[14px] text-black">Yolanda Putri Wulandaru</p>
+                        <p className="font-[600] text-[14px] text-black">Yolanda Putri Wulandaru</p>
                         <p className="font-[400] text-[12px] text-black opacity-60">10.14</p>
                     </div>
                     <p className="font-[400] text-[14px] text-black">Assalamulaikum pak, perkuliahan untuk minggu ini online atau offline ya?</p>
                 </div>
                 <div className="flex flex-col gap-1 mb-[10px]">
                     <div className="flex gap-[10px] items-center">
-                        <p className="font-[900] text-[14px] text-black">Drs. M. Tabah Rosyadi, M.A.</p>
+                        <p className="font-[600] text-[14px] text-black">Drs. M. Tabah Rosyadi, M.A.</p>
                         <p className="font-[400] text-[12px] text-black opacity-60">10.14</p>
                     </div>
                     <p className="font-[400] text-[14px] text-black">Minggu ini online yaa.</p>
                 </div>
                 <div className="flex flex-col gap-1 mb-[10px]">
                     <div className="flex gap-[10px] items-center">
-                        <p className="font-[900] text-[14px] text-black">Yolanda Putri Wulandaru</p>
+                        <p className="font-[600] text-[14px] text-black">Yolanda Putri Wulandaru</p>
                         <p className="font-[400] text-[12px] text-black opacity-60">10.14</p>
                     </div>
                     <p className="font-[400] text-[14px] text-black">Baik Pak, terima kasih.</p>
@@ -68,7 +68,7 @@ export default function MainRuangDiskusi(){
                 <div id="Chat" className="flex flex-col items-end gap-1 mb-[10px]" key={index}>
                     <div className="flex gap-[10px] items-center">
                         <p className="font-[400] text-[12px] text-black opacity-60">10.15</p>
-                        <p className="font-[900] text-[14px] text-black">You</p>
+                        <p className="font-[600] text-[14px] text-black">You</p>
                     </div>
                     <p className="font-[400] text-[14px] text-black">{message.text}</p>
                 </div>

@@ -1,14 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function InputFileHafalanSubmitted() {
 
     const [files, setFiles] = useState([]);
+    const [teks, setTeks] = useState("Anda tidak mengunggah tugas");
 
     const handleFileChange = (e) => {
       const newFiles = [...files, ...e.target.files];
       setFiles(newFiles);
     };
   
+    useEffect(() => {
+        if (files.length === 0){
+            const newTeks = "Anda tidak mengunggah tugas"
+            setTeks(newTeks);
+        } else{
+            const newTeks = ""
+            setTeks(newTeks);
+        }
+      });
+    
+
     const handleRemoveFile = (index) => {
       const newFiles = [...files];
       newFiles.splice(index, 1);
@@ -59,6 +71,7 @@ export default function InputFileHafalanSubmitted() {
                 <p className='font-[400] text-xl'>Kumpulkan Tugas</p>
                 <p id='SelesaiText' className='font-[600] text-[20px] text-[#0078CE]'>Selesai</p>
             </div>
+                <p className='align-center'>{teks}</p>
                 {files.map((file, index) => (
                 <div key={index} className="flex items-center justify-between gap-2 pt-5 pb-5 pl-5 pr-5 border-[1px] border-black border-opacity-40 rounded-[10px]">
                     <div className='flex gap-5'>
