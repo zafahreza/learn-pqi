@@ -6,7 +6,7 @@ export default function Mahasiswa({ index }){
                 <div>
                     <p className="font-[500] text-[16px]">Mahasiswa { index + 1 }</p>
                     <div className="flex gap-1">
-                        <p className="font-[500] text-[16px] text-black flex">NIP : </p>
+                        <p className="font-[500] text-[16px] text-black flex">NIM : </p>
                         <p className="font-[500] text-[16px] text-black flex">1120091000000{index + 1 }</p>
                     </div>
                 </div>

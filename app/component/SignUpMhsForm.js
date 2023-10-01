@@ -43,7 +43,7 @@ export default function SignUpMhsForm(){
                     <img src="/assets/EyeClose.png" alt="" id="EyeIcon" className="cursor-pointer opacity-50" onClick={HandleEyeIcon}></img>
                 </div>
             </div>
-            <Link href="/Dashboard" id="MulaiButton" className="text-[20px] leading-[30px] flex justify-center items-center text-white w-80 h-10 border-[1px] rounded-[10px] border-[#00438f] bg-[#00438f] self-center mb-6">Sign Up</Link>
+            <Link href="/SignIn" id="MulaiButton" className="text-[20px] leading-[30px] flex justify-center items-center text-white w-80 h-10 border-[1px] rounded-[10px] border-[#00438f] bg-[#00438f] self-center mb-6">Sign Up</Link>
             <div className="flex justify-center w-80 self-center mb-[50px]">
                 <p className="font-[500] leading-4 opacity-70 text-black mr-[10px]">Sudah Punya Akun?</p>
                 <Link href="/SignIn" className="font-[500] leading-4 opacity-70 text-black">Sign In</Link>

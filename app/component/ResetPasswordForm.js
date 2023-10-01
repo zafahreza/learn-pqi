@@ -32,7 +32,7 @@ export default function ResetPasswordForm(){
     }
 
     return(
-        <form className="flex flex-col justify-center w-3/5">
+        <form className="flex flex-col justify-center w-3/5 py-10">
             <p className="font-[700] text-2xl leading-9 mb-6 text-center">Reset Password</p>
             <div className="flex flex-col mb-6 self-center">
                 <label for="Password" className="leading-4 font-[500] text-black mb-2">Password Baru</label>

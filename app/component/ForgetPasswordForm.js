@@ -9,7 +9,7 @@ export default function ForgetPasswordForm(){
     const [showModal, setShowModal] = useState(false);
 
     return(
-        <form className="flex flex-col justify-center w-3/5">
+        <form className="flex flex-col justify-center w-3/5 py-10">
             <p className="font-[700] text-2xl leading-9 mb-6 text-center">Lupa Password</p>
             <p className="self-center mb-6 leading-[19.36px] font-[400] w-[320px] text-[15px]">Masukkan alamat email yang Anda gunakan.<br/>Kami akan mengirimkan tautan untuk<br/>mengatur ulang kata sandi Anda</p>
             <div className="flex flex-col mb-6 self-center">
