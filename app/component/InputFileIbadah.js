@@ -3,6 +3,17 @@ import React, { useState } from 'react';
 export default function InputFileIbadah() {
 
     const [files, setFiles] = useState([]);
+    const [sent, setSent] = useState("");
+
+    const handleSent = (x) => {
+        if (x === "hidden"){
+            const newSent = x;
+            setSent(newSent);
+        }else{
+            const newSent  = "";
+            setSent(newSent);
+        }
+    }
 
     const handleFileChange = (e) => {
       const newFiles = [...files, ...e.target.files];
@@ -39,7 +50,7 @@ export default function InputFileIbadah() {
         document.getElementById("sendTaskSubtitle").innerHTML = "Tugas yang sudah selesai akan dikumpulkan.";
         document.getElementById("sendButton").innerHTML = "Kirim";
         document.getElementById("SelesaiText").classList.add("hidden");
-        document.getElementById("removeFileButton").classList.remove("hidden");
+        handleSent("");
     }
 
     const handleSubmitted = () => {
@@ -50,7 +61,7 @@ export default function InputFileIbadah() {
         document.getElementById("sendTaskSubtitle").innerHTML = "Batal untuk mengubah<br/>pengunggahan. Kirim kembali<br/>setelah selesai mengubah<br/>pengunggahan.";
         document.getElementById("sendButton").innerHTML = "Ya";
         document.getElementById("SelesaiText").classList.remove("hidden");
-        document.getElementById("removeFileButton").classList.add("hidden");
+        handleSent("hidden");
     }
 
     return (
@@ -69,7 +80,7 @@ export default function InputFileIbadah() {
                     </div>
                     <button
                         onClick={() => handleRemoveFile(index)}
-                        className="text-red-500"
+                        className={sent}
                         id='removeFileButton'
                         >
                         <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
