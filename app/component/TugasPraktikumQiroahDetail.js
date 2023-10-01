@@ -7,11 +7,11 @@ export default function TugasPraktikumQiroahDetail(){
         <div className="flex flex-col items-center pt-[60px] mb-20">
             <div className="w-[850px] h-[140px] flex flex-col justify-center pl-[58px] bg-[#0078CE] rounded-[20px] mt-[40px] mb-[28px]">
                 <Link href="/Dashboard/PraktikumQiroah/TugasSection" className="font-Poppins font-[600] text-[20px] text-white">Praktikum Qiroah</Link>
-                <p className="font-[600] text-[32px] text-white">Hukum Nun Sukun dan Tanwin</p>
-                <p className="font-[500] text-[14px] text-white">6 Maret 2023</p>
+                <p className="font-[600] text-[32px] text-white">Tugas 6 - Mengaji Al - Zalzalah</p>
+                <p className="font-[500] text-[14px] text-white">Tenggat waktu : 19  Juni 2023 (15.00)</p>
             </div>
             <div>
-                <p className="font-[400] text-[14px] text-black mb-10">Berikut adalah materi pembelajaran hukum nun sukun dan tanwin. Silahkan disimak dengan baik.</p>
+                <p className="font-[400] text-[14px] text-black mb-10">Rekam suara mengaji surat Al - Zalzalah. Harap dikumpulkan sebelum deadline yang telah ditentukan.</p>
             </div>
             <InputFile />
             <div className="w-[741px] mb-3 mt-10">

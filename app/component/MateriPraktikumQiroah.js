@@ -117,23 +117,22 @@ export default function MateriPraktikumQiroah({ params }){
             }
             {isTugasVisible &&
             <div id="TugasSection" className=" flex flex-col items-center gap-[25px] pb-5">
-                <TaskCard name={"Tugas 7 - Mengaji Surah Al - Fatihah"} dueDate={"Tenggat waktu : 20 Maret 2023 (15.00)"}/>
-                <TaskCard name={"Tugas 6 - Mengaji Surah Al - Baqoroh"} dueDate={"Tenggat waktu : 27 Maret 2023 (15.00)"}/>
-                <TaskCardSubmitted tenggat={tenggat} name={"Tugas 5 - PPT Kelompok"} dueDate={"Tenggat waktu : 27 Maret 2023 (15.00)"}/>
-                <TaskCardSubmitted tenggat={"Terlambat"} name={"Tugas 4 - PPT Individu"} dueDate={"Tenggat waktu : 27 Maret 2023 (15.00)"}/>
-                <TaskCard name={"Tugas 3 - Mengaji Surah Al - Falaq"} dueDate={"Tenggat waktu : 21 Maret 2023 (15.00)"}/>
+                <TaskCard name={"Tugas 6 - Mengaji Al - Zalzalah"} dueDate={"Tenggat waktu : 19 Juni 2023 (15.00)"}/>
+                <TaskCard name={"Tugas 5 - PPT Kelompok"} dueDate={"Tenggat waktu : 16 April 2023 (23.59)"}/>
+                <TaskCardSubmitted tenggat={tenggat} name={"Tugas 4 -  Idgam"} dueDate={"Tenggat waktu: 9 April 2023 (23.59)"}/>
+                <TaskCardSubmitted tenggat={"Terlambat"} name={"Tugas 3 - Mengaji Al - Falaq"} dueDate={"Tenggat waktu : 3 April 2023 (15.00)"}/>
                 <TaskCardSubmitted tenggat={tenggat} name={"Tugas 2 - Mengaji An - Nas"} dueDate={"Tenggat waktu : 27 Maret 2023 (15.00)"}/>
-                <TaskCard name={"Tugas 1 - Mengaji Surah Al - Qiroah"} dueDate={"Tenggat waktu : 25 Maret 2023 (15.00)"}/>
+                <TaskCardSubmitted tenggat={tenggat} name={"Tugas 1 - Mengaji Surah Al - Fatihah"} dueDate={"Tenggat waktu : 20 Maret 2023 (15.00)"}/>
             </div>
             }
             {isHafalanVisible && 
             <div id="HafalanSection" className=" flex flex-col items-center gap-[25px] pb-5">
                 <HafalanCard name={"Surat An - Naba"} dueDate={"Tenggat waktu : 25 Juni 2023 (23.59)"}/>
-                <HafalanCardSubmitted tenggat={"Terlambat"} name={"Surat Al - Qodr"} dueDate={"Tenggat waktu : 21 Juni 2023 (23.59)"}/>
-                <HafalanCard name={"Surat An - Nas"} dueDate={"Tenggat waktu : 24 Juni 2023 (23.59)"}/>
-                <HafalanCardSubmitted tenggat={tenggat} name={"Surat Al - Zalzalah"} dueDate={"Tenggat waktu : 20 Juni 2023 (23.59)"}/>
-                <HafalanCard name={"Surat An - Nissa"} dueDate={"Tenggat waktu : 23 Juni 2023 (23.59)"}/>
-                <HafalanCardSubmitted tenggat={tenggat} name={"Surat Al - Alaq"} dueDate={"Tenggat waktu : 19 Juni 2023 (23.59)"}/>
+                <HafalanCardSubmitted tenggat={"Terlambat"} name={"Surat Al - Zalzalah"} dueDate={"Tenggat waktu : 11 Juni 2023 (23.59)"}/>
+                <HafalanCard name={"Surah At - Takasur"} dueDate={"Tenggat waktu : 4 Juni 2023 (23.59)"}/>
+                <HafalanCardSubmitted tenggat={tenggat} name={"Surah Al - Asr"} dueDate={"Tenggat waktu : 28 Mei 2023 (23.59)"}/>
+                <HafalanCardSubmitted tenggat={tenggat} name={"Surah Al - Fill"} dueDate={"Tenggat waktu : 21 Mei 2023 (23.59)"}/>
+                <HafalanCardSubmitted tenggat={tenggat} name={"Surah Al - Kausar"} dueDate={"Tenggat waktu : 14 Mei 2023 (23.59)"}/>
             </div>
             }
         </div>

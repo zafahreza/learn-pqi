@@ -113,23 +113,18 @@ export default function MateriPraktikumQiroah({ params }){
             }
             {isTugasVisible &&
             <div id="TugasSection" className=" flex flex-col items-center gap-[25px] pb-5">
-                <TaskCardIbadah />
-                <TaskCardIbadah />
-                <TaskCardIbadahSubmitted tenggat={tenggat}/>
-                <TaskCardIbadahSubmitted tenggat={"Terlambat"}/>
-                <TaskCardIbadah />
-                <TaskCardIbadahSubmitted tenggat={tenggat}/>
-                <TaskCardIbadah />
+                <TaskCardIbadah name={"Tugas 3 - Presentasi"} dueDate={"Tenggat waktu : 18 Juni 2023 (23.59)"}/>
+                <TaskCardIbadahSubmitted tenggat={tenggat} name={"Tugas 2 - Tugas 2"} dueDate={"Tenggat waktu : 16 April 2023 (23.59)"}/>
+                <TaskCardIbadahSubmitted tenggat={tenggat} name={"Tugas 1 -  Tugas 1"} dueDate={"Tenggat waktu: 9 April 2023 (23.59)"}/>
             </div>
             }
             {isHafalanVisible &&
             <div id="HafalanSection" className=" flex flex-col items-center gap-[25px] pb-5">
-                <HafalanCardIbadah />
-                <HafalanCardIbadahSubmitted tenggat={"Terlambat"}/>
-                <HafalanCardIbadah />
-                <HafalanCardIbadahSubmitted tenggat={tenggat}/>
-                <HafalanCardIbadah />
-                <HafalanCardIbadahSubmitted tenggat={tenggat}/>
+                <HafalanCardIbadah name={"Doa Sebelum Belajar"} dueDate={"Tenggat waktu : 23 Juni 2023 (23.59)"}/>
+                <HafalanCardIbadahSubmitted tenggat={tenggat} name={"Doa Berkendara"} dueDate={"Tenggat waktu : 16 Juni 2023 (23.59)"}/>
+                <HafalanCardIbadah name={"Doa Keluar Kamar Mandi"} dueDate={"Tenggat waktu : 21 Mei 2023 (23.59)"}/>
+                <HafalanCardIbadahSubmitted tenggat={tenggat} name={"Doa Masuk Kamar Mandi"} dueDate={"Tenggat waktu : 21 Mei 2023 (23.59)"}/>
+                <HafalanCardIbadahSubmitted tenggat={tenggat} name={"Doa Sebelum Makan"} dueDate={"Tenggat waktu : 14 Mei 2023 (23.59)"}/>
             </div>
             }
         </div>
