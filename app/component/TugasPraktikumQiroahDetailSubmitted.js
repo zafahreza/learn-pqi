@@ -8,11 +8,11 @@ export default function TugasPraktikumQiroahDetailSubmitted(){
         <div className="flex flex-col items-center pt-[60px] mb-20">
             <div className="w-[850px] h-[140px] flex flex-col justify-center pl-[58px] bg-[#0078CE] rounded-[20px] mt-[40px] mb-[28px]">
                 <Link href="/Dashboard/PraktikumQiroah/TugasSection" className="font-Poppins font-[600] text-[20px] text-white">Praktikum Qiroah</Link>
-                <p className="font-[600] text-[32px] text-white">Hukum Nun Sukun dan Tanwin</p>
-                <p className="font-[500] text-[14px] text-white">6 Maret 2023</p>
+                <p className="font-[600] text-[32px] text-white">Tugas 4 -  Idgam</p>
+                <p className="font-[500] text-[14px] text-white">Tenggat waktu: 9 April 2023 (23.59)</p>
             </div>
             <div>
-                <p className="font-[400] text-[14px] text-black mb-10">Berikut adalah materi pembelajaran hukum nun sukun dan tanwin. Silahkan disimak dengan baik.</p>
+                <p className="font-[400] text-[14px] text-black mb-10">Carilah hukum bacaan idgam pada surat Al - Alaq</p>
             </div>
             <InputFileSubmitted />
             <div className="w-[741px] mb-3 mt-10">
