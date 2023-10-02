@@ -8,10 +8,10 @@ export default function MateriPraktikumQiroahDetailVoice(){
             <div className="w-[850px] h-[140px] flex flex-col justify-center pl-[58px] bg-[#0078CE] rounded-[20px] mt-[40px] mb-[28px]">
                 <Link href="/Dashboard/PraktikumQiroah/MateriSection" className="font-Poppins font-[600] text-[20px] text-white cursor-pointer">Praktikum Qiroah</Link>
                 <p className="font-[600] text-[32px] text-white">Hukum Mim Sukun</p>
-                <p className="font-[500] text-[14px] text-white">8 Maret 2023</p>
+                <p className="font-[500] text-[14px] text-white">13 Maret 2023</p>
             </div>
             <div>
-                <p className="font-[400] text-[14px] text-black mb-10">Berikut adalah materi pembelajaran hukum Mim Sukun. Silahkan disimak dengan baik.</p>
+                <p className="font-[400] text-[14px] text-black mb-10">Berikut adalah materi pembelajaran hukum mim sukun. Silahkan disimak dengan baik.</p>
             </div>
             <EmbedVoice />
             <div className="w-[741px] mb-3 mt-10">

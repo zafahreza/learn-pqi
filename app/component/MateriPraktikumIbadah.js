@@ -121,7 +121,7 @@ export default function MateriPraktikumQiroah({ params }){
             {isHafalanVisible &&
             <div id="HafalanSection" className=" flex flex-col items-center gap-[25px] pb-5">
                 <HafalanCardIbadah name={"Doa Sebelum Belajar"} dueDate={"Tenggat waktu : 23 Juni 2023 (23.59)"}/>
-                <HafalanCardIbadahSubmitted tenggat={tenggat} name={"Doa Berkendara"} dueDate={"Tenggat waktu : 16 Juni 2023 (23.59)"}/>
+                <HafalanCardIbadahSubmitted tenggat={"Terlambat"} name={"Doa Berkendara"} dueDate={"Tenggat waktu : 16 Juni 2023 (23.59)"}/>
                 <HafalanCardIbadah name={"Doa Keluar Kamar Mandi"} dueDate={"Tenggat waktu : 21 Mei 2023 (23.59)"}/>
                 <HafalanCardIbadahSubmitted tenggat={tenggat} name={"Doa Masuk Kamar Mandi"} dueDate={"Tenggat waktu : 21 Mei 2023 (23.59)"}/>
                 <HafalanCardIbadahSubmitted tenggat={tenggat} name={"Doa Sebelum Makan"} dueDate={"Tenggat waktu : 14 Mei 2023 (23.59)"}/>

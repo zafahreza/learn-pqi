@@ -8,11 +8,11 @@ export default function HafalanPraktikumQiroahDetail(){
         <div className="flex flex-col items-center pt-[60px] mb-20">
             <div className="w-[850px] h-[140px] flex flex-col justify-center pl-[58px] bg-[#0078CE] rounded-[20px] mt-[40px] mb-[28px]">
                 <Link href="/Dashboard/PraktikumQiroah/HafalanSection" className="font-Poppins font-[600] text-[20px] text-white">Praktikum Qiroah</Link>
-                <p className="font-[600] text-[32px] text-white">Surah An- Naba</p>
-                <p className="font-[500] text-[14px] text-white">Tenggat waktu : 25 Juni 2023 (23.59)</p>
+                <p className="font-[600] text-[32px] text-white">Surah At - Takasur</p>
+                <p className="font-[500] text-[14px] text-white">Tenggat waktu : 11 Juni 2023 (23.59)</p>
             </div>
             <div>
-                <p className="font-[400] text-[14px] text-black mb-10">Buatlah video hafalan surah An- Naba. Harap dikumpulkan sebelum deadline yang telah ditentukan.</p>
+                <p className="font-[400] text-[14px] text-black mb-10">Buatlah video hafalan Surah At - Takasur. Harap dikumpulkan sebelum deadline yang telah ditentukan.</p>
             </div>
             <InputFileHafalanSubmitted />
             <div className="w-[741px] mb-3 mt-10">

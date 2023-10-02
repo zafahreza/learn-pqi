@@ -89,7 +89,7 @@ export default function InputFileHafalanSubmitted() {
         <div className='min-w-[395px] border-[1px] rounded-[15px] border-black border-opacity-50 p-6 flex flex-col gap-[25px]'>
             <div className='flex justify-between'>
                 <p className='font-[400] text-xl'>Kumpulkan Tugas</p>
-                <p id='SelesaiText' className='font-[600] text-[20px] text-[#0078CE]'>Selesai</p>
+                <p id='SelesaiText' className='font-[600] text-[20px] text-[#0078CE]'>Terlambat</p>
             </div>
                 <p className='text-center'>{teks}</p>
                 {files.map((file, index) => (

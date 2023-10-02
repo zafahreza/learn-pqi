@@ -9,7 +9,7 @@ export default function HafalanPraktikumIbadahDetail(){
             <div className="w-[850px] h-[140px] flex flex-col justify-center pl-[58px] bg-[#0078CE] rounded-[20px] mt-[40px] mb-[28px]">
                 <Link href="/Dashboard/PraktikumIbadah/HafalanSection" className="font-Poppins font-[600] text-[20px] text-white">Praktikum Ibadah</Link>
                 <p className="font-[600] text-[32px] text-white">Doa Berkendara</p>
-                <p className="font-[500] text-[14px] text-white">Tenggat waktu : 25 Juni 2023 (23.59)</p>
+                <p className="font-[500] text-[14px] text-white">Tenggat waktu : 16 Juni 2023 (23.59)</p>
             </div>
             <div>
                 <p className="font-[400] text-[14px] text-black mb-10">Buatlah video hafalan Doa Berkendara. Harap dikumpulkan sebelum deadline yang telah ditentukan.</p>

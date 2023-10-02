@@ -11,7 +11,7 @@ export default function MainNotification(){
                     <p className="font-Poppins font-[500] text-[24px] text-white">Notifikasi</p>
                 </div>
                 <div className="flex flex-col gap-[15px]">
-                    <Link href="/Dashboard/PraktikumIbadah/Materi" className="flex flex-col justify-center cursor-pointer" id="NotificationCard">
+                    <Link href="/Dashboard/PraktikumIbadah/Hafalan" className="flex flex-col justify-center cursor-pointer" id="NotificationCard">
                         <p className="font-[600] text-[14px] text-[#090A0A] cursor-pointer">Praktikum Ibadah Hafalan doa baru : Doa Sebelum Belajar</p>
                         <p className="font-[500] text-[14px] text-[#04264D] cursor-pointer">Tenggat waktu : 23 Juni 2023 (23.59)</p>
                         <p className="font-[500] text-[14px] text-[#090A0A] opacity-50 cursor-pointer">19 Juni 2023 13.55</p>
@@ -30,7 +30,7 @@ export default function MainNotification(){
                         <p className="font-[500] text-[14px] text-[#04264D] cursor-pointer">Tenggat waktu : 19 Juni 2023 (15.00)</p>
                         <p className="font-[500] text-[14px] text-[#090A0A] opacity-50 cursor-pointer">5 Juni 2023 14.55</p>
                     </Link>
-                    <Link href="/Dashboard/PraktikumIbadah/Hafalan" className="flex flex-col justify-center cursor-pointer" id="NotificationCard">
+                    <Link href="/Dashboard/PraktikumIbadah/Hafalan/Submitted" className="flex flex-col justify-center cursor-pointer" id="NotificationCard">
                         <p className="font-[600] text-[14px] text-[#090A0A] cursor-pointer]">Praktikum Ibadah Hafalan doa baru : Doa Berkendara</p>
                         <p className="font-[500] text-[14px] text-[#04264D] cursor-pointer">Tenggat waktu : 16 Juni 2023 (23.59)</p>
                         <p className="font-[500] text-[14px] text-[#090A0A] opacity-50 cursor-pointer">5 Juni 2023 13.40</p>

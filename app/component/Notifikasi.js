@@ -29,7 +29,7 @@ export default function Notifikasi(){
                         <p className="font-[500] text-[14px] leading-[16.94px] text-[#04264D] mb-[2px] cursor-pointer">Tenggat waktu : 19 Juni 2023 (15:00)</p>
                         <p className="font-[500] text-[14px] leading-[16.94px] text-[#090A0A] opacity-50 cursor-pointer">5 Juni 2023 14.55</p>
                     </Link>
-                    <Link href="/Dashboard/PraktikumIbadah/Hafalan" className="cursor-pointer" id="NotificationCard">
+                    <Link href="/Dashboard/PraktikumIbadah/Hafalan/Submitted" className="cursor-pointer" id="NotificationCard">
                         <p className="font-[600] text-[14px] leading-[16.94px] text-[#090A0A] mb-[2px cursor-pointer]">Praktikum Ibadah Hafalan doa baru : Doa Berkendara</p>
                         <p className="font-[500] text-[14px] leading-[16.94px] text-[#04264D] mb-[2px] cursor-pointer">Tenggat waktu : 16 Juni 2023 (23:59)</p>
                         <p className="font-[500] text-[14px] leading-[16.94px] text-[#090A0A] opacity-50 cursor-pointer">5 Juni 2023 13.40</p>
