@@ -128,10 +128,10 @@ export default function MateriPraktikumQiroah({ params }){
             {isHafalanVisible && 
             <div id="HafalanSection" className=" flex flex-col items-center gap-[25px] pb-5">
                 <HafalanCard name={"Surat An - Naba"} dueDate={"Tenggat waktu : 25 Juni 2023 (23.59)"}/>
-                <HafalanCardSubmitted tenggat={"Terlambat"} name={"Surah At - Takasur"} dueDate={"Tenggat waktu : 11 Juni 2023 (23.59)"}/>
+                <HafalanCardSubmitted tenggat={"Terlambat"} name={"Surah At - Takatsur"} dueDate={"Tenggat waktu : 11 Juni 2023 (23.59)"}/>
                 <HafalanCard name={"Surah Al - Asr"} dueDate={"Tenggat waktu : 4 Juni 2023 (23.59)"}/>
                 <HafalanCardSubmitted tenggat={tenggat} name={"Surah Al - Fill"} dueDate={"Tenggat waktu : 28 Mei 2023 (23.59)"}/>
-                <HafalanCardSubmitted tenggat={tenggat} name={"Surah Al - Kausar"} dueDate={"Tenggat waktu : 21 Mei 2023 (23.59)"}/>
+                <HafalanCardSubmitted tenggat={tenggat} name={"Surah Al - Kautsar"} dueDate={"Tenggat waktu : 21 Mei 2023 (23.59)"}/>
                 <HafalanCardSubmitted tenggat={tenggat} name={"Surah Al - Falaq"} dueDate={"Tenggat waktu : 14 Mei 2023 (23.59)"}/>
             </div>
             }
