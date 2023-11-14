@@ -95,7 +95,7 @@ export default function MainProfile(){
                 </div>
                 <div className="flex justify-between">
                     <div className="flex flex-col gap-[10px]">
-                        <label for="TanggalLahir" className="font-[500] text-[14px]">Program Studi</label>
+                        <label for="TanggalLahir" className="font-[500] text-[14px]">Tanggal Lahir</label>
                         <input type="date" className="w-[182px] h-[41px] border-2 border-[#00438F] flex items-center px-[15px] rounded-[10px]"></input>
                     </div>
                     <div className="flex flex-col gap-[10px]">
@@ -104,7 +104,7 @@ export default function MainProfile(){
                     </div>
                 </div>
                 <div className="flex flex-col gap-[10px]">
-                    <label for="ProgramStudi" className="font-[500] text-[14px]">Program Studi</label>
+                    <label for="ProgramStudi" className="font-[500] text-[14px]">Alamat</label>
                     <textarea type="text" placeholder="Program Studi" className="w-[458px] h-[115px] border-2 border-[#00438F] flex items-center px-[15px] py-[13px] rounded-[10px]"></textarea>
                 </div>
                 <div className="flex justify-center items-center gap-[25px] mt-[15px]">
