@@ -105,7 +105,7 @@ export default function MainProfile(){
                 </div>
                 <div className="flex flex-col gap-[10px]">
                     <label for="ProgramStudi" className="font-[500] text-[14px]">Alamat</label>
-                    <textarea type="text" placeholder="Program Studi" className="w-[458px] h-[115px] border-2 border-[#00438F] flex items-center px-[15px] py-[13px] rounded-[10px]"></textarea>
+                    <textarea type="text" placeholder="Alamat" className="w-[458px] h-[115px] border-2 border-[#00438F] flex items-center px-[15px] py-[13px] rounded-[10px]"></textarea>
                 </div>
                 <div className="flex justify-center items-center gap-[25px] mt-[15px]">
                     <button href="#" className="px-[15px] py-[10px] font-[600] text-[14px] border-2 border-[#00438F] rounded-[10px]" onClick={handlePassword}>Ubah Password</button>
